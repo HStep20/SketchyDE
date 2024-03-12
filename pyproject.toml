@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "python3-poetry-pyenv"
+version = "0.1.0"
+description = ""
+authors = ["hstephens <stephens.j.hunter@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "python3_poetry_pyenv"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+duckdb = "^0.10.0"
+pandas = "^2.2.1"
+openpyxl = "^3.1.2"
+thefuzz = "^0.22.1"
+python-levenshtein = "^0.25.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
