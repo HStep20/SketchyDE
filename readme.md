@@ -1,5 +1,11 @@
 The repository is built using a DevContainer in VS code.  This automatically installs all required tech (python, poetry, python libraries), and builds the environment for you to work inside of a container. No more issues of 'it works on my machine' to be found here. The file paths may end up weird, but I believe it should all work out of the container. 
 
+# Running
+
+To run, simply launch VSCode with Docker installed, and build the devcontainer. Then run the `main.py` script, and it will output the final 'report' to the console. 
+
+If you are not using Docker, the libraries are installed via [Poetry](https://python-poetry.org/) instead of pip, which may need to be installed locally on your machine. Once its installed, just type `poetry install`, and it will set up a venv and install the libraries for you to run the `main.py` code. 
+
 # Approach
 There are a few options we could take to ingest data. In my current work, I use Pandas (now Polars) for this kind of small csv ingestion work,
 but since we will be doing some analysis and joins (and the Pandas API for this is obtuse), instead of juggling python > pandas > Datbase > SQL
